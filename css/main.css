@@ -1,0 +1,58 @@
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+
+body {
+    background-color: #000;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container h1 {
+    font-weight: 800;
+    font-size: 1.125rem;
+    line-height: 1.7rem;
+    color: white;
+}
+
+.container #store_name {
+    border-radius: 10px;
+    height: 2rem;
+    background-color: #435d65;
+    outline: none;
+    border: 0px;
+    padding-left: 8px;
+    color: white;
+}
+
+.container #store_name:focus {
+    border: 1px solid white;
+}
+
+.container .error, 
+.container .success {
+    font-size: medium;
+    font-weight: 600;
+    display: none;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green
+}
